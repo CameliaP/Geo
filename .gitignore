@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Geo.sln.ide
+/Geo.v14.suo
+/Geo/bin/Debug
+/Geo/obj/Debug
+/Geo/Geo.csproj.user
