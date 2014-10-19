@@ -13,7 +13,11 @@
 		</Style>
 	</local:ContentBase.Resources>
 
-	<StackPanel>
+	<StackPanel Margin="15">
+		<Button HorizontalAlignment="Right" 
+				Content="Refresh"
+				Command="{Binding CommandRefresh, Mode=OneTime}"/>
+		<ProgressBar IsIndeterminate="{Binding IsRefreshing, Mode=OneWay}"/>		
 		<StackPanel Orientation="Horizontal">
 			<TextBlock Text="Status:"/>
 			<TextBlock Margin="5 0 0 0"

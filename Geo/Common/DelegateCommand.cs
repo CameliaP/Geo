@@ -32,7 +32,7 @@ namespace Geo.Common
 			_executeAction(parameter);
 		}
 
-		public void RaiseExecuteChanged()
+		public void RaiseCanExecuteChanged()
 		{
 			if (CanExecuteChanged != null)
 				CanExecuteChanged(this, new EventArgs());
