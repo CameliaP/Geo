@@ -126,6 +126,24 @@
   <data name="LongitudeTextBlock.Text" xml:space="preserve">
     <value>Longitude:</value>
   </data>
+  <data name="PositionStatusDisabled" xml:space="preserve">
+    <value>Location services are disabled. Use the Settings charm to enable them</value>
+  </data>
+  <data name="PositionStatusInitializing" xml:space="preserve">
+    <value>Geolocation service is initializing</value>
+  </data>
+  <data name="PositionStatusNoData" xml:space="preserve">
+    <value>Location service data is not available</value>
+  </data>
+  <data name="PositionStatusNotAvailable" xml:space="preserve">
+    <value>Location services are not supported on your system</value>
+  </data>
+  <data name="PositionStatusNotInitialized" xml:space="preserve">
+    <value>Location status is not initialized because the app has not yet requested location data</value>
+  </data>
+  <data name="PositionStatusReady" xml:space="preserve">
+    <value>Location is available</value>
+  </data>
   <data name="RefreshButton.Content" xml:space="preserve">
     <value>Refresh</value>
   </data>

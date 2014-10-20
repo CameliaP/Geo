@@ -126,6 +126,24 @@
   <data name="LongitudeTextBlock.Text" xml:space="preserve">
     <value>Долгота:</value>
   </data>
+  <data name="PositionStatusDisabled" xml:space="preserve">
+    <value>Сервис геолокации отключен. Перейдите в Настройки для включения</value>
+  </data>
+  <data name="PositionStatusInitializing" xml:space="preserve">
+    <value>Сервис геолокации инициализируется</value>
+  </data>
+  <data name="PositionStatusNoData" xml:space="preserve">
+    <value>Данные сервиса геолокации не доступны</value>
+  </data>
+  <data name="PositionStatusNotAvailable" xml:space="preserve">
+    <value>Сервис геолокации не поддерживается вашей системой</value>
+  </data>
+  <data name="PositionStatusNotInitialized" xml:space="preserve">
+    <value>Статус сервиса геолокации не инициализирован, т.к. приложение не запросило данные о местоположении</value>
+  </data>
+  <data name="PositionStatusReady" xml:space="preserve">
+    <value>Сервис геолокации доступен</value>
+  </data>
   <data name="RefreshButton.Content" xml:space="preserve">
     <value>Обновить</value>
   </data>

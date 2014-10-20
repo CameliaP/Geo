@@ -101,20 +101,22 @@ namespace Geo.Contexts
 
 		private string GetStatusString(PositionStatus status)
 		{
+			var loader = new Windows.ApplicationModel.Resources.ResourceLoader();
+
 			switch (status)
 			{
 				case PositionStatus.Ready:
-					return "Location is available";
+					return loader.GetString("PositionStatusReady");
 				case PositionStatus.Initializing:
-					return "Geolocation service is initializing";
+					return loader.GetString("PositionStatusInitializing");
 				case PositionStatus.NoData:
-					return "Location service data is not available";
+					return loader.GetString("PositionStatusNoData");
 				case PositionStatus.Disabled:
-					return "Location services are disabled. Use the Settings charm to enable them";
+					return loader.GetString("PositionStatusDisabled");
 				case PositionStatus.NotInitialized:
-					return "Location status is not initialized because the app has not yet requested location data";
+					return loader.GetString("PositionStatusNotInitialized");
 				case PositionStatus.NotAvailable:
-					return "Location services are not supported on your system";
+					return loader.GetString("PositionStatusNotAvailable");
 				default:
 					throw new NotSupportedException("Value: " + status);
 			}
