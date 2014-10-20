@@ -14,30 +14,30 @@
 	</local:ContentBase.Resources>
 
 	<StackPanel Margin="15">
-		<Button HorizontalAlignment="Right" 
-				Content="Refresh"
+		<Button x:Uid="RefreshButton"
+                HorizontalAlignment="Right" 
 				Command="{Binding CommandRefresh, Mode=OneTime}"/>
 		<ProgressBar IsIndeterminate="{Binding IsRefreshing, Mode=OneWay}"/>		
 		<StackPanel Orientation="Horizontal">
-			<TextBlock Text="Status:"/>
+			<TextBlock x:Uid="StatusTextBlock" />
 			<TextBlock Margin="5 0 0 0"
 					   Text="{Binding Status, Mode=OneWay}"/>
 		</StackPanel>
 		<StackPanel Margin="0 5 0 0"
 					Orientation="Horizontal">
-			<TextBlock Text="Latitude:"/>
+			<TextBlock x:Uid="LatitudeTextBlock" />
 			<TextBlock Margin="5 0 0 0"
 					   Text="{Binding Latitude, Mode=OneWay}"/>
 		</StackPanel>
 		<StackPanel Margin="0 5 0 0"
 					Orientation="Horizontal">
-			<TextBlock Text="Longitude:"/>
+			<TextBlock x:Uid="LongitudeTextBlock" />
 			<TextBlock Margin="5 0 0 0"
 					   Text="{Binding Longitude, Mode=OneWay}"/>
 		</StackPanel>
 		<StackPanel Margin="0 5 0 0"
 					Orientation="Horizontal">
-			<TextBlock Text="Accuracy:"/>
+			<TextBlock x:Uid="AccuracyTextBlock" />
 			<TextBlock Margin="5 0 0 0"
 					   Text="{Binding Accuracy, Mode=OneWay}"/>
 		</StackPanel>
