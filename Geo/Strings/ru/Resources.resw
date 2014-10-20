@@ -120,7 +120,7 @@
   <data name="AccuracyTextBlock.Text" xml:space="preserve">
     <value>Точность:</value>
   </data>
-  <data name="LatitudeTextBlockюText" xml:space="preserve">
+  <data name="LatitudeTextBlock.Text" xml:space="preserve">
     <value>Широта:</value>
   </data>
   <data name="LongitudeTextBlock.Text" xml:space="preserve">

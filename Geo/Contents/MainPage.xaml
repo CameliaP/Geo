@@ -8,7 +8,7 @@
 				   Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 	<local:ContentBase.Resources>
 		<Style TargetType="TextBlock">
-			<Setter Property="FontSize" Value="26"/>
+			<Setter Property="FontSize" Value="22"/>
 			<Setter Property="FontFamily" Value="Segoe UI"/>
 		</Style>
 	</local:ContentBase.Resources>
@@ -21,6 +21,7 @@
 		<StackPanel Orientation="Horizontal">
 			<TextBlock x:Uid="StatusTextBlock" />
 			<TextBlock Margin="5 0 0 0"
+					   TextTrimming="CharacterEllipsis"
 					   Text="{Binding Status, Mode=OneWay}"/>
 		</StackPanel>
 		<StackPanel Margin="0 5 0 0"
