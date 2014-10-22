@@ -150,4 +150,7 @@
   <data name="StatusTextBlock.Text" xml:space="preserve">
     <value>Status:</value>
   </data>
+  <data name="UnhandledExceptionTitle" xml:space="preserve">
+    <value>There's a problem</value>
+  </data>
 </root>

@@ -1,7 +1,9 @@
-﻿using Geo.Contents;
+﻿using System;
+using Geo.Contents;
 using Geo.Contexts;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Animation;
@@ -17,9 +19,21 @@ namespace Geo
         {
             InitializeComponent();
             Suspending += OnSuspending;
+			UnhandledException += App_UnhandledException;
         }
 
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+		private async void App_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+		{
+			e.Handled = true;
+
+			var loader = new Windows.ApplicationModel.Resources.ResourceLoader();
+			var title = loader.GetString("UnhandledExceptionTitle");
+			var dialog = new MessageDialog(e.Message, title);
+
+			await dialog.ShowAsync();
+		}
+
+		protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
             var rootFrame = Window.Current.Content as Frame;
 
